@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Menu } from '../components/Menu';
+import { SideMenu } from '../components/SideMenu';
 import styles from '../styles/Common.module.css';
 
 const Home: NextPage = () => {
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <section className={styles.mainGrid}>
         <aside className={styles.aside}>
-          <Menu />
+          <SideMenu />
         </aside>
         <main className={styles.main}>
           <h1>Home page</h1>

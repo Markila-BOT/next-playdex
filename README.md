@@ -1,32 +1,14 @@
 ## Getting Started
 
-First, run the development server:
+Imagine we have a vehicle catalog site. Please, implement a multilevel menu component `components/SideMenu/index.tsx` using data from the `useSideMenu` hook. Design example:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![alt text](https://i.stack.imgur.com/agMDJ.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Requirements:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. You are not limited in using any packages/libraries. However do not use ones for implementing menu component.
+2. Do not modify `useSideMenu`.
+3. Each level should have a left indent similarly to the image above. Let's take `1rem` for the indent and formula `i * 1rem`, where `i` - is a level number. So for the first level the indent equals `0rem`, for the second = `1rem`, for the third one = `2rem`, etc.
+4. Note that the number of menu levels is unlimited and may change from one vehicle types to another. For example, for the `Bikes` we may have less levels than for the `Cars` and for other types of vehicle it may differs.
+5. Menu link which property `to` equals to the current url path should be highlighted by text color or background color.
+6. Menu item may be either a navigation link or an item which can make some action (i.g. Logout). Please, check types `lib/types/navigation.ts` and `useSideMenu`.

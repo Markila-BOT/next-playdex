@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import styles from '../../styles/Common.module.css';
-import { Menu } from '../../components/Menu';
+import { SideMenu } from '../../components/SideMenu';
 
 const Catalog = () => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const Catalog = () => {
 
       <section className={styles.mainGrid}>
         <aside className={styles.aside}>
-          <Menu />
+          <SideMenu />
         </aside>
         <main className={styles.main}>
           <h1>Breadcrumbs: {slug.join(' > ')}</h1>
