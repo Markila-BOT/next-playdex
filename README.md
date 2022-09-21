@@ -12,3 +12,4 @@ Requirements:
 4. Note that the number of menu levels is unlimited and may change from one vehicle types to another. For example, for the `Bikes` we may have less levels than for the `Cars` and for other types of vehicle it may differ.
 5. Menu link which property `to` equals to the current url path should be highlighted by text color or background color.
 6. Menu item may be either a navigation link or an item which can make some action (e.g. Logout). Please, check types `lib/types/navigation.ts` and `useSideMenu`.
+7. Solution should be published online. For example, you can use [Stackblitz](https://stackblitz.com/edit/next-typescript?file=package.json) for that purpose.
