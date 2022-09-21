@@ -1,0 +1,9 @@
+.container {
+  padding: 0 2rem;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 1.5rem;
+}

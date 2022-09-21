@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Menu } from '../components/Menu';
-import styles from '../styles/Common.module.css';
+import { Menu } from '../../components/Menu';
+import styles from '../../styles/Common.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -17,13 +17,13 @@ const Home: NextPage = () => {
           <Menu />
         </aside>
         <main className={styles.main}>
-          <h1>Home page</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam eius doloribus aspernatur rerum.
-          </p>
+          <h1>Сatalog</h1>
           <p>
             Nulla nihil, obcaecati adipisci illo, molestiae earum, veritatis soluta ipsum porro repellendus! Recusandae
             facere esse alias!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam eius doloribus aspernatur rerum.
           </p>
         </main>
       </section>

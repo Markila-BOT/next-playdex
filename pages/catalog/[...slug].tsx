@@ -1,9 +1,12 @@
-import type { NextPage } from 'next';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { Menu } from '../components/Menu';
-import styles from '../styles/Common.module.css';
+import styles from '../../styles/Common.module.css';
+import { Menu } from '../../components/Menu';
 
-const Home: NextPage = () => {
+const Catalog = () => {
+  const router = useRouter();
+  const slug = (router.query.slug as string[]) || [];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,10 +20,7 @@ const Home: NextPage = () => {
           <Menu />
         </aside>
         <main className={styles.main}>
-          <h1>Home page</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam eius doloribus aspernatur rerum.
-          </p>
+          <h1>Breadcrumbs: {slug.join(' > ')}</h1>
           <p>
             Nulla nihil, obcaecati adipisci illo, molestiae earum, veritatis soluta ipsum porro repellendus! Recusandae
             facere esse alias!
@@ -31,4 +31,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Catalog;
