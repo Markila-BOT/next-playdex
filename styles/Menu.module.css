@@ -1,0 +1,22 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebarWrap {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #fff;
+}
+
+.ddList {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.ddListHide {
+  display: none;
+}

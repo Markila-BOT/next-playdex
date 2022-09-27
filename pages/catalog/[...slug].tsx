@@ -7,6 +7,10 @@ const Catalog = () => {
   const router = useRouter();
   const slug = (router.query.slug as string[]) || [];
 
+  if (router.isFallback) {
+    return <h1>Loading...</h1>;
+  }
+
   return (
     <div className={styles.container}>
       <Head>
