@@ -23,7 +23,8 @@ const Menu = (children: ChildrenItem[]) => {
     const aliasHref = subOption.to === '/' ? subOption.to : `/catalog${subOption.to}`;
     if (!subOption.children) {
       return subOption.title === 'Logout' ? (
-        <a
+        <a 
+          key={index}
           className={styles.title}
           style={{ background: menuCatalog[subOption.title] ? 'green' : 'black' }}
           onClick={() => {
